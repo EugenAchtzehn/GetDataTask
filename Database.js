@@ -13,7 +13,7 @@ const sequelize = new Sequelize('Tourism', process.env.POST_ACCT, process.env.PO
   // 設定連線池
   pool: {
     // 最大連線數
-    max: 10,
+    max: 50,
     // 最小連線數
     min: 0,
     // 獲取連線的最長等待時間(毫秒) - 30秒

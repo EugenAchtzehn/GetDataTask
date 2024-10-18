@@ -14,6 +14,8 @@ const PrecipitationObs = sequelize.define(
       type: DataTypes.STRING(10),
       allowNull: false,
     },
+    // 氣象署地面氣象站站號為 46 開頭者，為有人氣象站
+    // 站號為 C0 和 C1 開頭者，為自動雨量站和自動氣象站
     stationid: {
       type: DataTypes.STRING(15),
       allowNull: false,
